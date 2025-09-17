@@ -35,6 +35,9 @@ importers:
       sweetalert:
         specifier: ^2.1.2
         version: 2.1.2
+      sweetalert2:
+        specifier: ^11.23.0
+        version: 11.23.0
       tailwindcss:
         specifier: ^4.1.13
         version: 4.1.13
@@ -1288,6 +1291,9 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
+  sweetalert2@11.23.0:
+    resolution: {integrity: sha512-cKzzbC3C1sIs7o9XAMw4E8F9kBtGXsBDUsd2JZ8JM/dqa+nzWwSGM+9LLYILZWzWHzX9W+HJNHyBlbHPVS/krw==}
+
   sweetalert@2.1.2:
     resolution: {integrity: sha512-iWx7X4anRBNDa/a+AdTmvAzQtkN1+s4j/JJRWlHpYE8Qimkohs8/XnFcWeYHH2lMA8LRCa5tj2d244If3S/hzA==}
 
@@ -2498,6 +2504,8 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
+
+  sweetalert2@11.23.0: {}
 
   sweetalert@2.1.2:
     dependencies:

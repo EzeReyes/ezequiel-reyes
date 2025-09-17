@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { gql, useMutation } from "@apollo/client";
-import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 const NUEVA_CONSULTA = gql`
   mutation nuevaConsulta($input: InputConsulta) {
@@ -48,14 +48,19 @@ const Formulario = () => {
           body: JSON.stringify(valores),
         });
 
-        swal(
-          "¡Mensaje enviado!",
-          "Tu consulta se generó exitosamente",
-          "success"
-        );
+        Swal.fire({
+            title: '¡Mensaje enviado!',
+            text: 'Tu consulta se generó exitosamente',
+            icon: 'success',
+        });
+
         formik.resetForm();
       } catch (error) {
-        swal("Hubo un error", error.message, "error");
+        Swal.fire({
+            title: 'Se ha producido!',
+            text: error.message,
+            icon: 'error',
+        });
       } finally {
         setIsSubmitting(false);
         setTimeout(() => setMensaje(null), 3000);
