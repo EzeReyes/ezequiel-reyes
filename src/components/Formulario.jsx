@@ -72,7 +72,7 @@ const Formulario = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-md"
+      className="max-w-xl mx-auto bg-gradient-to-t from-black to-gray-900 p-6 rounded-lg shadow-md"
     >
       {mensaje && (
         <div className="bg-green-100 text-green-800 py-2 px-4 rounded mb-4 text-center">
