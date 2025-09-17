@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { gql, useMutation } from "@apollo/client";
+import { gql } from "@apollo/client";
+import { useMutation } from "@apollo/client/react";
 import Swal from "sweetalert2";
 
 const NUEVA_CONSULTA = gql`
