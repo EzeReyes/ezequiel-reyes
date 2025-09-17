@@ -24,15 +24,15 @@ const Main = () => {
 
   return (
     <main className='text-white bg-gradient-to-t from-gray-700 to-gray-500 font-extrabold'>
-        <div style={{boxShadow:'0 5px 14px #ffffff42'}} className='grid min-h-96 sm:w-full min-w-max sm:grid-cols-2 grid-cols-1 gap-2 border-x-amber-600 items-center ml-0 border-solid border-amber-30
+        <div style={{boxShadow:'0 5px 14px #ffffff42'}} className='grid min-h-96 sm:w-full sm:grid-cols-2 grid-cols-1 gap-2 border-x-amber-600 items-center ml-0 border-solid border-amber-30
         0'>
-          <div className='flex self-center flex-col-reverse justify-center sm:justify-normal items-start sm:items-end pr-2 pt-10 bg-amber-200 border-x-amber-500 h-full text-6xl text-black sm:flex-col sm:my-0 my-10'>
+          <div className='flex self-center flex-col-reverse justify-center sm:justify-normal items-center sm:items-end pr-2 pt-10 bg-amber-200 border-x-amber-500 h-full text-6xl text-black sm:flex-col sm:my-0 my-10'>
             <h2 className='mb-2'>Soy</h2>
             <img className='w-auto h-24 rounded-4xl' src="./img/perfil.jpeg" alt='foto de Perfil Ezequiel'/>
           </div>
           <div className='bg-neutral-800 sm:flex pl-2 pt-10 items-start text-6xl text-white h-full flex-col sm:my-0 my-10'>
             <div className='flex gap-2 flex-col'>
-              <h2>Ezequiel Reyes</h2>
+              <h2 className='text-center'>Ezequiel Reyes</h2>
               <div className='flex flex-row gap-2 items-center justify-center'>
                 <a href="https://www.linkedin.com/services/page/7146943198a877803b/" className='hover:shadow-md' target="_blank" title="linkedin iconos"><img width="30" height="30" src="https://img.icons8.com/ios/50/linkedin.png" alt="linkedin"/></a>
                 <a href="https://www.instagram.com/ezequi3l_reyes" className='hover:shadow-md' target="_blank" title="instagram iconos"><img width="30" height="30" src="https://img.icons8.com/ios/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
@@ -41,16 +41,16 @@ const Main = () => {
               </div>
             </div>
             <div className='text-2xl rounded w-max bg-amber-300 text-black mt-7 p-4 hover:bg-black hover:text-white cursor-pointer'>
-            <p>Desarrollador web</p>
+            <p className='text-center'>Desarrollador web</p>
             </div>
           </div>
       </div>
 
 
       <div className='flex flex-col gap-20 items-center justify-center my-10 text-3xl text-white'>
-        <div className='flex flex-row items-center gap-2'>
+        <div className='flex flex-row items-center justify-center gap-2'>
           <hr className="w-20" style={{color:'#fee685'}}></hr>
-          <p>Stack de programación</p>
+          <p className='text-lg'>Stack de programación</p>
         </div>
         <div className='grid sm:grid-cols-3 grid-cols-1 items-center gap-2.5'>
         {tech.sort((a, b) => b.id - (a.id))
@@ -73,9 +73,9 @@ const Main = () => {
 
       <div className='flex flex-row  items-center justify-center gap-2 my-10'>
           <hr className="w-20" style={{color:'#fee685'}}></hr>
-          <h3 className='text-center text-3xl uppercase '>Mis proyectos</h3>
+          <h3 className='text-center text-lg uppercase '>Mis proyectos</h3>
       </div>
-      <div className='sm:flex sm:w-auto flex flex-col justify-center gap-20 items-center p-10 w-3/4'>
+      <div className='sm:flex sm:w-auto flex flex-col justify-center gap-20 items-center sm:p-10 w-full'>
         <Proyects />
       </div>
     </main>
